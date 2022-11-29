@@ -1,0 +1,50 @@
+.header {
+  padding: 3.2rem 0 2.4rem 0;
+  border-bottom: .1rem solid $color-border-primary;
+  
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      justify-content: start;
+    }
+
+  &__block {
+    display: flex;
+    align-items: flex-end;
+
+
+    &--icon {
+      text-decoration: none;
+      color: $color-grey-light;
+      
+      & > img { 
+        margin-right: 1.5rem;
+      }
+      
+    }
+
+    &--text {
+      display: inline-block;
+      color: $color-grey-light;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      transform: translateY(-.4rem);
+
+    }
+    
+  }
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+
+}
+
+.mr {
+      margin-right: 3.5rem;
+}
+

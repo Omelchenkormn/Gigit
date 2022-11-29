@@ -1,0 +1,37 @@
+.profile {
+  padding: 3.2rem 0 3.8rem 0;
+  
+}
+
+.preview {
+  position: relative;
+
+  &::before {
+      position: absolute;
+      content: "";
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: #EFF0F2;
+      bottom: -1.6rem;
+      left: 13.9rem;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../img/Photo.svg);
+      background-repeat: no-repeat;
+      width: 1.9rem;
+      height: 1.9rem;
+      bottom: -.3rem;
+      left: 14.9rem;
+      background-size: cover;
+    }
+  
+  &__img {
+    height: 16rem;
+
+  }
+
+}

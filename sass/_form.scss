@@ -1,0 +1,70 @@
+.form {
+  position: relative;
+
+  &__group {
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__input{
+    display: block;
+    color: inherit;
+    width: 100%;
+    transition: all .3s;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    padding: 1.3rem 1.6rem 1.3rem 1.6rem;
+    background-color: $color-primary;
+    border: .1rem solid #D4DAE1;
+    border-radius: .6rem;
+
+    &--icon {
+      width: 1.6rem;
+      height: 1.848rem;
+      position: absolute;
+      top: 1.6rem;
+      right: 1.8rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus:invalid {
+      border-bottom: .3rem solid #FF715B;
+      
+    }
+  }
+
+  &__label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+    display: block;
+    transition: all .3s;
+    position: absolute;
+    transform: translateY(-14.8rem);
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.map-placeholder {
+
+  &::placeholder {
+    color: $color-black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-family: $font-primary;
+}
+}
+
+
+
+

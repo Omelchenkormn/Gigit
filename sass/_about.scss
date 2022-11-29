@@ -1,0 +1,20 @@
+.about {  
+  max-width: 80rem;
+
+  @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 3.2rem;
+    }
+
+  &__block {
+    min-height: 10.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--text {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+  }
+}
